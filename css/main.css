@@ -122,8 +122,8 @@ footer {
   background-position: center;
   color: white;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
   padding: 4rem 10%;
+  min-height: 400px;
 }
 
 #intro p {
@@ -132,3 +132,4 @@ footer {
   border-radius: 6px;
   display: inline-block;
 }
+
