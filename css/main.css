@@ -1,0 +1,134 @@
+/* ---------- GLOBAL STYLES ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4CAF50; /* hover color (greenish accent) */
+  border-bottom: 2px solid #4CAF50;
+}
+
+.nav-links a.active {
+  color: #FFD700; /* active link color (gold) */
+}
+
+/* ---------- SECTIONS ---------- */
+.section {
+  padding: 3rem 10%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #4CAF50;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.section p {
+  margin-bottom: 1.2rem;
+}
+
+/* ---------- LISTS ---------- */
+ul {
+  margin-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #1a1a1a;
+  color: #eee;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* ---------- CUSTOM STYLE #1: RESPONSIVE NAVBAR ---------- */
+@media (max-width: 700px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    background: #333;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.5rem 0;
+  }
+}
+
+/* ---------- CUSTOM STYLE #2: SECTION HIGHLIGHT EFFECT ---------- */
+.section:hover {
+  background-color: #f0f8f5;
+  transition: background-color 0.4s ease;
+  border-radius: 10px;
+}
+
+/* ---------- CUSTOM STYLE #3: IMAGE OR VIDEO BACKGROUND ---------- */
+#intro {
+  background-image: url('../img/big_farmers_market.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 4rem 10%;
+}
+
+#intro p {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem;
+  border-radius: 6px;
+  display: inline-block;
+}
